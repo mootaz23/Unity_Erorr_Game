@@ -15,11 +15,11 @@ public class Movment : NetworkBehaviour
             anim.SetFloat("Vertical",(Input.GetAxis("Vertical") + fixedJoystick.Vertical));
 
             Vector3 characterScale = transform.localScale;
-            if(Input.GetAxis("Horizontal") < 0)
+            if(Input.GetAxis("Horizontal") + fixedJoystick.Horizontal< 0)
         {
             characterScale.x = -1;
         }
-        if(Input.GetAxis("Horizontal") > 0)
+        if(Input.GetAxis("Horizontal") + fixedJoystick.Horizontal> 0)
         {
             characterScale.x = 1;
         }
