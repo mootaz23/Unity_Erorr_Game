@@ -20,11 +20,11 @@ public class Movment : NetworkBehaviour
             Vector3 characterScale = transform.localScale;
             if(inputX < 0)
             {
-                characterScale.x = -1;
+                characterScale.x = Mathf.Abs(characterScale.x) ;
             }
             if(inputX > 0)
             {
-                characterScale.x = 1;
+                characterScale.x = characterScale.x * -1;
             }
             transform.localScale = characterScale;
         }
