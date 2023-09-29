@@ -16,13 +16,13 @@ public class Movment : NetworkBehaviour
 
             Vector3 characterScale = transform.localScale;
             if(Input.GetAxis("Horizontal") + fixedJoystick.Horizontal< 0)
-        {
-            characterScale.x = -1;
-        }
-        if(Input.GetAxis("Horizontal") + fixedJoystick.Horizontal> 0)
-        {
-            characterScale.x = 1;
-        }
-        transform.localScale = characterScale;
+            {
+                characterScale.x = -1;
+            }
+            if(Input.GetAxis("Horizontal") + fixedJoystick.Horizontal> 0)
+            {
+                characterScale.x = 1;
+            }
+            transform.localScale = characterScale;
         }
     }
