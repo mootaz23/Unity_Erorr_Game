@@ -9,17 +9,20 @@ public class Movment : NetworkBehaviour
         public FixedJoystick fixedJoystick;
         public Animator anim;
         private void Update() {
-            transform.Translate((Input.GetAxis("Horizontal")+ fixedJoystick.Horizontal) * Speed * Time.deltaTime, (Input.GetAxis("Vertical") + fixedJoystick.Vertical)* Speed  * Time.deltaTime, 0f);
+            float inputX = Input.GetAxis("Horizontal")+ fixedJoystick.Horizontal;
+            float inputY = Input.GetAxis("Vertical") + fixedJoystick.Vertical;
             
-            anim.SetFloat("Horizontal",(Input.GetAxis("Horizontal")+ fixedJoystick.Horizontal));
-            anim.SetFloat("Vertical",(Input.GetAxis("Vertical") + fixedJoystick.Vertical));
+            transform.Translate(inputX * Speed * Time.deltaTime, inputY* Speed  * Time.deltaTime, 0f);
+            
+            anim.SetFloat("Horizontal",inputX);
+            anim.SetFloat("Vertical",inputY);
 
             Vector3 characterScale = transform.localScale;
-            if(Input.GetAxis("Horizontal") + fixedJoystick.Horizontal< 0)
+            if(inputX < 0)
             {
                 characterScale.x = -1;
             }
-            if(Input.GetAxis("Horizontal") + fixedJoystick.Horizontal> 0)
+            if(inputX > 0)
             {
                 characterScale.x = 1;
             }
