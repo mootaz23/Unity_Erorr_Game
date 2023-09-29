@@ -1321,7 +1321,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2582527213490334907}
   - component: {fileID: 8989623963328863309}
-  - component: {fileID: 332383486425844132}
   m_Layer: 0
   m_Name: Animation
   m_TagString: Untagged
@@ -1357,7 +1356,7 @@ Animator:
   m_GameObject: {fileID: 1303215245248412072}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3e315a7ba30144f9b95dfeb0cc4291d5, type: 2}
+  m_Controller: {fileID: 9100000, guid: d6075220753dca8409074d274fc17ac4, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1368,18 +1367,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &332383486425844132
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1303215245248412072}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07a219f3f28a3014ca16bf6b2f13111f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1310871360936149602
 GameObject:
   m_ObjectHideFlags: 0
@@ -9874,7 +9861,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80cd3cad3afd43079abde900b17b49f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AnimationEvents: {fileID: 332383486425844132}
+  AnimationEvents: {fileID: 0}
   Edge: {fileID: 7352919053794771392}
 --- !u!1 &5476651408725799442
 GameObject:
@@ -20643,7 +20630,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 618b150481b84b219194d8fb83ab0335, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AnimationEvents: {fileID: 332383486425844132}
+  AnimationEvents: {fileID: 0}
   Params:
     Name: LR-100
     FirearmTexture: {fileID: 2800000, guid: 72255d3c9beb56d4bba17250511a808e, type: 3}
@@ -20866,6 +20853,7 @@ GameObject:
   - component: {fileID: 4974122815709954155}
   - component: {fileID: 5165563151945666697}
   - component: {fileID: 7372325471369717625}
+  - component: {fileID: 2947580994009240030}
   m_Layer: 0
   m_Name: Brave (Zadem)
   m_TagString: Untagged
@@ -20896,7 +20884,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7308760928956586669}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aa07006f64294964b84f79497751e149, type: 3}
   m_Name: 
@@ -21056,7 +21044,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7308760928956586669}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7655dbdbae96492abedad7bdc555301d, type: 3}
   m_Name: 
@@ -21068,7 +21056,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7308760928956586669}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2cfe3e6f36484a49b6292e8d0b75f6c4, type: 3}
   m_Name: 
@@ -21178,6 +21166,19 @@ MonoBehaviour:
   SortingOrderOffset: 0
   SortingOrderStep: 5
   ZStep: 0.00001
+--- !u!114 &2947580994009240030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7308760928956586669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11e99c37154c04240b097da7e64b581a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speed: 15
 --- !u!1 &7410063075292613329
 GameObject:
   m_ObjectHideFlags: 0
