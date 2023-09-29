@@ -1,0 +1,4 @@
+repository "errorr@Harkyris@cloud"
+  path "/"
+    br "/main"
+    co "/main"
