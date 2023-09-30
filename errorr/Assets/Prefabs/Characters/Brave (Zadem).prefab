@@ -21181,6 +21181,7 @@ MonoBehaviour:
   Speed: 15
   fixedJoystick: {fileID: 0}
   anim: {fileID: 0}
+  rb: {fileID: 0}
 --- !u!1 &7410063075292613329
 GameObject:
   m_ObjectHideFlags: 0
