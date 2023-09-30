@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/2D Dungeon Tileset/Scenes/Sample.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/HeroEditor/CyberpunkHeroes/Scenes/TestRoom [CPH].unity
@@ -14,6 +14,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/HeroEditor/CyberpunkHeroes/Scenes/CharacterEditor [CPH].unity
     guid: 227c61aa0019cc04b99b4163a58f7257
+  - enabled: 1
+    path: Assets/Scenes/0.unity
+    guid: a31a917f7d250d04393043fd9f84b70c
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 8402fd21f89082f4e997429c196db4d8, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 450e7bdd495f3bf41b7c3b2027b51a10, type: 2}

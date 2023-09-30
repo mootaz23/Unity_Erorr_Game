@@ -1,0 +1,7 @@
+{
+    "RoslynExtensions": true,
+    "MSBuild": {
+        "MultiLevelLookup": true,
+        "SkipAnalyzers": false
+    }
+}
