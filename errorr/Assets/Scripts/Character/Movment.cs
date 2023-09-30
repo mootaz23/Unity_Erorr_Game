@@ -22,11 +22,19 @@ public class Movment : NetworkBehaviour
             Vector3 characterScale = transform.localScale;
             if(inputX < 0)
             {
-                characterScale.x = -1 ;
+                if( characterScale.x > 0 )
+                {
+                    characterScale.x *= -1;
+                }
+                
             }
             if(inputX > 0)
             {
-                characterScale.x = 1;
+                if(characterScale.x < 0)
+                {
+                    characterScale.x *= -1;
+                }
+
             }
             transform.localScale = characterScale;
         }
